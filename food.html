@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>福州美食 - 福州风景</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-content {
+            max-width: 1200px;
+            margin: 100px auto 0;
+            padding: 2rem;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .page-header h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .food-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .food-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .food-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .food-info {
+            padding: 1.5rem;
+        }
+        
+        .food-info h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .food-info p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .food-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .tag {
+            background-color: #f0f0f0;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .food-intro {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 3rem;
+        }
+        
+        .food-intro h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        .food-intro p {
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .food-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">福州风景</div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="sanfangqixiang.html">三坊七巷</a></li>
+                <li><a href="gushan.html">鼓山</a></li>
+                <li><a href="minjiang.html">闽江</a></li>
+                <li><a href="food.html" class="active">美食</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <div class="page-header">
+            <h1>福州美食</h1>
+            <p>舌尖上的福州，品味闽菜精华</p>
+        </div>
+
+        <section class="food-intro">
+            <h2>福州美食文化</h2>
+            <p>福州菜是闽菜的重要组成部分，以其独特的烹饪技艺和丰富的食材著称。福州菜讲究"鲜、香、甜、酸、辣"五味调和，注重食材的原汁原味，形成了独具特色的饮食文化。</p>
+            <p>从街边小吃到传统名菜，福州美食展现了这座城市深厚的历史文化底蕴和独特的地域特色。</p>
+        </section>
+
+        <div class="food-grid">
+            <div class="food-card">
+                <img src="images/fish-ball.jpg" alt="福州鱼丸">
+                <div class="food-info">
+                    <h2>福州鱼丸</h2>
+                    <p>福州鱼丸是福州最具代表性的传统小吃之一，选用新鲜海鱼制作，口感弹牙，汤汁鲜美。</p>
+                    <div class="food-tags">
+                        <span class="tag">传统小吃</span>
+                        <span class="tag">海鲜</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="images/lychee-meat.jpg" alt="荔枝肉">
+                <div class="food-info">
+                    <h2>荔枝肉</h2>
+                    <p>荔枝肉是福州传统名菜，因形似荔枝而得名。选用猪里脊肉制作，外酥里嫩，酸甜可口。</p>
+                    <div class="food-tags">
+                        <span class="tag">传统名菜</span>
+                        <span class="tag">酸甜</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="images/sea-cucumber.jpg" alt="佛跳墙">
+                <div class="food-info">
+                    <h2>佛跳墙</h2>
+                    <p>佛跳墙是福州最负盛名的传统名菜，汇集山珍海味，香气四溢，被誉为"闽菜之首"。</p>
+                    <div class="food-tags">
+                        <span class="tag">传统名菜</span>
+                        <span class="tag">山珍海味</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="images/rice-wine.jpg" alt="福州米酒">
+                <div class="food-info">
+                    <h2>福州米酒</h2>
+                    <p>福州米酒是传统酿造工艺的结晶，口感醇厚，香气怡人，是福州饮食文化的重要组成部分。</p>
+                    <div class="food-tags">
+                        <span class="tag">传统饮品</span>
+                        <span class="tag">酿造</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="images/seaweed-soup.jpg" alt="海蛎煎">
+                <div class="food-info">
+                    <h2>海蛎煎</h2>
+                    <p>海蛎煎是福州特色小吃，选用新鲜海蛎制作，外酥里嫩，鲜香可口。</p>
+                    <div class="food-tags">
+                        <span class="tag">特色小吃</span>
+                        <span class="tag">海鲜</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <img src="images/peanut-soup.jpg" alt="花生汤">
+                <div class="food-info">
+                    <h2>花生汤</h2>
+                    <p>花生汤是福州传统甜品，选用优质花生熬制，香甜可口，营养丰富。</p>
+                    <div class="food-tags">
+                        <span class="tag">传统甜品</span>
+                        <span class="tag">养生</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 福州风景. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

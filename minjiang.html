@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>闽江 - 福州风景</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-content {
+            max-width: 1200px;
+            margin: 100px auto 0;
+            padding: 2rem;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .page-header h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .content-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .content-section img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .text-content {
+            padding: 1rem;
+        }
+        
+        .text-content h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        .text-content p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        .river-gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .river-gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        
+        .river-gallery img:hover {
+            transform: scale(1.05);
+        }
+        
+        .river-info {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+        }
+        
+        .river-info h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        .river-info ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .river-info li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .river-info li:before {
+            content: "•";
+            color: #e74c3c;
+            position: absolute;
+            left: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .content-section {
+                grid-template-columns: 1fr;
+            }
+            
+            .river-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">福州风景</div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="sanfangqixiang.html">三坊七巷</a></li>
+                <li><a href="gushan.html">鼓山</a></li>
+                <li><a href="minjiang.html" class="active">闽江</a></li>
+                <li><a href="food.html">美食</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <div class="page-header">
+            <h1>闽江</h1>
+            <p>母亲河，城市发展的见证</p>
+        </div>
+
+        <section class="content-section">
+            <img src="images/minjiang-river.jpg" alt="闽江风光">
+            <div class="text-content">
+                <h2>闽江概况</h2>
+                <p>闽江是福建省最大的河流，全长577公里，流域面积60992平方公里。它发源于武夷山脉，流经福州，最终注入东海。闽江是福州人民的母亲河，见证了福州的历史变迁。</p>
+                <p>闽江不仅为福州提供了丰富的水资源，还孕育了独特的闽江文化，是福州重要的自然景观和文化遗产。</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="text-content">
+                <h2>自然景观</h2>
+                <p>闽江两岸风光秀丽，四季景色各异。春季两岸绿意盎然，夏季江水奔流，秋季层林尽染，冬季烟波浩渺。沿江分布着众多自然景观和人文景点。</p>
+                <p>闽江入海口处的马尾港，是近代中国重要的通商口岸，见证了福州对外开放的历史。</p>
+            </div>
+            <img src="images/minjiang-view.jpg" alt="闽江景观">
+        </section>
+
+        <section class="content-section">
+            <img src="images/minjiang-culture.jpg" alt="闽江文化">
+            <div class="text-content">
+                <h2>文化价值</h2>
+                <p>闽江流域孕育了独特的闽江文化，包括水上交通、渔业、商贸等多个方面。沿江的古镇、码头、桥梁等历史遗迹，都是闽江文化的重要见证。</p>
+                <p>闽江文化是福州文化的重要组成部分，对福州的城市发展和文化形成产生了深远影响。</p>
+            </div>
+        </section>
+
+        <div class="river-info">
+            <h3>闽江特色</h3>
+            <ul>
+                <li>闽江是福建省最大的河流，流域面积占全省总面积的50%以上</li>
+                <li>闽江流域水资源丰富，是福州重要的饮用水源</li>
+                <li>闽江入海口处的马尾港是近代中国重要的通商口岸</li>
+                <li>闽江两岸分布着众多历史文化遗产和自然景观</li>
+                <li>闽江文化是福州文化的重要组成部分</li>
+            </ul>
+        </div>
+
+        <!-- <div class="river-gallery">
+            <img src="images/minjiang-1.jpg" alt="闽江风景1">
+            <img src="images/minjiang-2.jpg" alt="闽江风景2">
+            <img src="images/minjiang-3.jpg" alt="闽江风景3">
+            <img src="images/minjiang-4.jpg" alt="闽江风景4">
+        </div> -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 福州风景. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

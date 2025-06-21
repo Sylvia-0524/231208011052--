@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三坊七巷 - 福州风景</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-content {
+            max-width: 1200px;
+            margin: 100px auto 0;
+            padding: 2rem;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .page-header h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .content-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .content-section img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .text-content {
+            padding: 1rem;
+        }
+        
+        .text-content h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        .text-content p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+            .content-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">福州风景</div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="sanfangqixiang.html" class="active">三坊七巷</a></li>
+                <li><a href="gushan.html">鼓山</a></li>
+                <li><a href="minjiang.html">闽江</a></li>
+                <li><a href="food.html">美食</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <div class="page-header">
+            <h1>三坊七巷</h1>
+            <p>千年古街，见证福州历史变迁</p>
+        </div>
+
+        <section class="content-section">
+            <img src="images/sanfangqixiang-detail.png" alt="三坊七巷街景">
+            <div class="text-content">
+                <h2>历史渊源</h2>
+                <p>三坊七巷是福州历史文化名城的核心区域，始建于晋代，形成于唐代，至明清时期达到鼎盛。这里保存着大量明清时期的古建筑，是福州历史文化的重要见证。</p>
+                <p>三坊指的是：衣锦坊、文儒坊、光禄坊；七巷指的是：杨桥巷、郎官巷、塔巷、黄巷、安民巷、宫巷、吉庇巷。</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="text-content">
+                <h2>建筑特色</h2>
+                <p>三坊七巷的建筑以明清时期的闽派建筑为主，具有典型的福州地方特色。建筑多为砖木结构，采用"三进三落"的布局，体现了中国传统建筑的精髓。</p>
+                <p>这里的建筑不仅保存完好，而且仍然保持着原有的生活气息，是研究福州传统民居建筑的重要实物资料。</p>
+            </div>
+            <img src="images/sanfangqixiang-architecture.jpg" alt="三坊七巷建筑">
+        </section>
+
+        <section class="content-section">
+            <img src="images/sanfangqixiang-culture.jpg" alt="三坊七巷文化">
+            <div class="text-content">
+                <h2>文化价值</h2>
+                <p>三坊七巷不仅是建筑艺术的瑰宝，更是福州文化的重要载体。这里曾居住过众多历史名人，如林则徐、严复等，留下了丰富的历史文化遗产。</p>
+                <p>如今，这里已经成为福州重要的文化旅游景点，吸引着众多游客前来感受福州的历史文化魅力。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 福州风景. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

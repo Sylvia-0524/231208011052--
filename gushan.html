@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鼓山 - 福州风景</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-content {
+            max-width: 1200px;
+            margin: 100px auto 0;
+            padding: 2rem;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .page-header h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .content-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .content-section img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .text-content {
+            padding: 1rem;
+        }
+        
+        .text-content h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        .text-content p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 768px) {
+            .content-section {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">福州风景</div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="sanfangqixiang.html">三坊七巷</a></li>
+                <li><a href="gushan.html" class="active">鼓山</a></li>
+                <li><a href="minjiang.html">闽江</a></li>
+                <li><a href="food.html">美食</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <div class="page-header">
+            <h1>鼓山</h1>
+            <p>佛教圣地，自然风光</p>
+        </div>
+
+        <section class="content-section">
+            <img src="images/gushan-temple.jpg" alt="鼓山涌泉寺">
+            <div class="text-content">
+                <h2>涌泉寺</h2>
+                <p>鼓山涌泉寺始建于唐代，是福建省著名的佛教寺院。寺内保存着众多珍贵的文物，包括唐代石雕、宋代铜钟等。寺院建筑依山而建，气势恢宏，是福州重要的佛教文化圣地。</p>
+                <p>涌泉寺因寺内有一口涌泉而得名，泉水清澈甘甜，四季不绝，是福州著名的"三山两塔"之一。</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="text-content">
+                <h2>自然风光</h2>
+                <p>鼓山海拔969米，是福州最高的山峰之一。山上植被茂密，四季常青，是福州市民休闲健身的好去处。从山顶可以俯瞰整个福州城，景色壮丽。</p>
+                <p>山上有多条登山步道，适合不同体力的游客选择。沿途可以欣赏到各种奇石怪树，感受大自然的鬼斧神工。</p>
+            </div>
+            <img src="images/gushan-view.jpg" alt="鼓山风光">
+        </section>
+
+        <section class="content-section">
+            <img src="images/gushan-culture.jpg" alt="鼓山文化">
+            <div class="text-content">
+                <h2>文化价值</h2>
+                <p>鼓山不仅是一处自然景观，更是福州重要的文化地标。山上保存着众多摩崖石刻，记录了历代文人墨客的题咏。这些石刻是研究福州历史文化的重要资料。</p>
+                <p>每年都有众多游客和信众前来朝拜，感受佛教文化的魅力，欣赏自然风光。</p>
+            </div>
+        </section>
+
+        <!-- <div class="gallery">
+            <img src="images/gushan-1.jpg" alt="鼓山风景1">
+            <img src="images/gushan-2.jpg" alt="鼓山风景2">
+            <img src="images/gushan-3.jpg" alt="鼓山风景3">
+        </div> -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 福州风景. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
